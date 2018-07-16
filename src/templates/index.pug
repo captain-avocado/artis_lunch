@@ -263,16 +263,57 @@ block content
               span.btn__text Отправить
     section.section.section_history
       .container.container_history
+        .title
+          svg.title__icon
+            use(xlink:href="images/sprite.svg#plate")
+          .title__main-title
+            span.accent-text Наша 
+            span.all-text История
+          .title__subtitle Lorem ipsum dolor sit amet, consectetur adipiscin
         .history
-          .history__title.title  
-            svg.title__icon
-              use(xlink:href="images/sprite.svg#plate")
-            .title__main-title
-              span.accent-text Наша 
-              span.all-text История
-            .title__subtitle Lorem ipsum dolor sit amet, consectetur adipiscin
+          .history__left-col
+            .history__text 
+              span.all-text Lorem ipsum dolor sit amet, consectetur adipiscing
+              span.accent-text  elit, sed do eiusmod 
+              span.all-text tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+              span.accent-text ullamco laboris 
+              span.all-text nisi ut aliquip ex ea commodo consequat.
+            ul.history__companies.companies
+              li.companies__item.company
+                i.fa.fa-hand-point-right.company__pointer
+                .company__name Молочная культура
+                .company__descr Завод по производству молочной продукции класса premium под собственной торговой маркой
+              li.companies__item.company
+                i.fa.fa-hand-point-right.company__pointer
+                .company__name Молочная культура
+                .company__descr Экспорт сельскохозяйственной продукции 
+              li.companies__item.company
+                i.fa.fa-hand-point-right.company__pointer
+                .company__name Молочная культура
+                .company__descr Поставка продовольственных продуктов для социальной сферы, поставка продуктов в сектор НоReCa, организация питания для социальной сферы
+              li.companies__item.company
+                i.fa.fa-hand-point-right.company__pointer
+                .company__name Молочная культура
+                .company__descr Производство молока, выращивание овощей и картофеля
+          .history__right-col
+            .owl-wrapper
+              .owl-carousel.owl-theme.owl-loaded
+                .owl-stage-outer
+                    .owl-stage
+                        .owl-item
+                          img.owl-img(src="images/milk-cult.jpg")
+                        .owl-item
+                          img.owl-img(src="images/milk-cult.jpg")
+                        .owl-item
+                          img.owl-img(src="images/milk-cult.jpg")
+                .owl-nav
+                    .owl-prev
+                    .owl-next
+              img(src="images/artis-logo.png").history__artis-logo
 
-
+         
+            
+           
 
           
               

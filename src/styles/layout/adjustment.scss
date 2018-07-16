@@ -103,5 +103,9 @@ body {
         // display: flex;
         // justify-content: center;
     }
+
+    &_history {
+        flex-direction: column;
+    }
    
 }

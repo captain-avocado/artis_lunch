@@ -1,0 +1,20 @@
+.company {
+
+  position: relative;
+
+  &__pointer {
+    position: absolute;
+    top: 0;
+    left: -30px;
+    color: $accent-color;
+  }
+
+  &__name {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+  &__descr {
+    margin-bottom: 10px;
+  }
+}
