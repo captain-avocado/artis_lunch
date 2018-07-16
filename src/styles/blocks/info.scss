@@ -1,30 +1,31 @@
 .info {
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  &__text {
-    font-size: 20px;
-    font-weight: 400;
-    text-transform: uppercase;
-    color: #dfdfdf;
-    &_banner {
-      color: #2a2a2a;
-    }
-  }
-  &__price {
-    font-size: 38px;
+  width: 600px;
+  text-align: center;
+  &__title {
+    font-size: 50px;
     font-weight: 700;
-    text-align: right;
-    margin-bottom: 30px;
-    &_banner {
-      margin-bottom: 0;
-      color: #ed1c24;
-      &:after {
-        content: 'р';
-        color: #434445;
-      }
+    margin-bottom: 25px;
+  }
+
+  &__subtitle {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+  }
+
+  &__descr {
+    margin-bottom: 25px;
+  }
+
+  &__btns {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__btn {
+    &:not(:last-of-type) {
+      margin-right: 35px;
     }
   }
-  
+
 }

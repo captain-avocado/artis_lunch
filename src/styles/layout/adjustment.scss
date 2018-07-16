@@ -1,34 +1,49 @@
 body {
     //fonts
-    font-family: 'Montserrat';
-    font-size: 11px;
-    color: $text-black;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    color: #000;
 
     position: relative;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('../images/bg-main.jpg');
+    color: #fff;
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: #000;
+        opacity: .45;
+    }
+
+    &__info {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        
+
+    }
 }
 
 .container {
     width: 1140px;
 
-    &_header {
+    &_main {
+        z-index: 1;
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
     }
 
-    &_menu {
-        display: flex;
-        justify-content: center;
-    }
-
-    &_slider {
-        position: relative;
-    }
-
-    &_main-content {
-        display: flex;
-    }
-
-    &_footer {
-        display: flex;
-    }
+   
 }

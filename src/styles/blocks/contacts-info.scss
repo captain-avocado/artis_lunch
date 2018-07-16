@@ -1,0 +1,17 @@
+.contacts-info {
+  display: flex;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    &:not(:last-of-type) {
+      margin-right: 15px;
+    }
+  }
+
+  &__icon {
+    margin-right: 5px;
+    color: $accent-color;
+  }
+
+}

@@ -3,438 +3,54 @@ block head
     title Главная страница
 block variables
 block content
-    header.header
-      .container.container_header
-        .city.header__city
-          a(href="#").city__link
-            svg.city__icon
-              use(xlink:href=`images/sprite.svg#placeholder`)
-          .city__name Владивосток
-        .logo.header__logo 
-          a(href="#") sneakers
-        ul.icons.header__icons
-          li.icons__item
-            a(href="#").icons__link
-              svg.icons__search
-                use(xlink:href=`images/sprite.svg#search`)
-          li.icons__item
-            a(href="#").icons__link
-              svg.icons__avatar
-                use(xlink:href=`images/sprite.svg#avatar`)
-          li.icons__item
-            a(href="#").icons__link
-              .icons__cart.cart
-                svg.cart__icon
-                  use(xlink:href=`images/sprite.svg#cart`)
-                .cart__num 2
-    ul.menu
-      .container.container_menu
-        li.menu__item.active
-          a.menu__link(href="#") новая коллекция
-        li.menu__item
-          a.menu__link(href="#") мужские
-        li.menu__item
-          a.menu__link(href="#") женские
-        li.menu__item
-          a.menu__link(href="#") детские
-        li.menu__item
-          a.menu__link(href="#") распродажи
-        li.menu__item
-          a.menu__link(href="#") магазин
-    .slider
-      .container.container_slider
-        ul.slider__list
-          li.slider__item.active
-            img.slider__img(src="images/slider2.jpg", alt="")
-            .info.slider__info
-              .info__text woman's air max 270
-              .info__price 3 990р
-              a(href="#").info__btn.btn.btn_more Подробнее
-          li.slider__item
-            img.slider__img(src="", alt="")
-          li.slider__item
-            img.slider__img(src="", alt="")
-        ul.slider__dots.dots
-          li.dots__item.active
-            a.dots__link(href="#")
-          li.dots__item
-            a.dots__link(href="#")
-          li.dots__item
-            a.dots__link(href="#")
-        a(href="#").slider__nav.slider__nav_next
-          i.fas.fa-angle-right
-        a(href="#").slider__nav.slider__nav_prev
-          i.fa.fa-angle-left
-    .main-content
-        .container.container_main-content
-          aside.aside
-            .aside__filters.filters
-              .filters__title.main-title
-                .main-title__text.no-right-border Фильтры
-                a(href="#").main-title__icon
-                  i.fas.fa-redo
-              ul.filters__list
-                li.filters__item.filter.filter_categories
-                  .filter__title.title
-                    .title__text.no-top-border.no-right-border Категории
-                    a(href="#").title__icon.no-top-border
-                      i.fas.fa-angle-down
-                  ul.filter__content.categories.no-top-border
-                    li.categories__item.category
-                      label.category__label.label
-                        input(type="radio" name="category").category__radio.radio
-                        .category__radio-fake.radio-fake
-                        .category__name мужские
-                    li.categories__item.category
-                      label.category__label.label
-                        input(type="radio" name="category").category__radio.radio
-                        .category__radio-fake.radio-fake
-                        .category__name женские
-                    li.categories__item.category
-                      label.category__label.label
-                        input(type="radio" name="category").category__radio.radio
-                        .category__radio-fake.radio-fake
-                        .category__name детские
-                li.filters__item.filter.filter_categories
-                  .filter__title.title
-                    .title__text.no-top-border.no-right-border Бренды
-                    a(href="#").title__icon.no-top-border
-                      i.fas.fa-angle-down
-                  ul.filter__content.categories.no-top-border
-                    li.categories__item.category
-                      label.category__label.label
-                        input(type="radio" name="brands").category__radio.radio
-                        .category__radio-fake.radio-fake
-                        .category__name adidas
-                    li.categories__item.category
-                      label.category__label.label
-                        input(type="radio" name="brands").category__radio.radio
-                        .category__radio-fake.radio-fake
-                        .category__name converse
-                    li.categories__item.category
-                      label.category__label.label
-                        input(type="radio" name="brands").category__radio.radio
-                        .category__radio-fake.radio-fake
-                        .category__name jordan
-                    li.categories__item.category
-                      label.category__label.label
-                        input(type="radio" name="brands").category__radio.radio
-                        .category__radio-fake.radio-fake
-                        .category__name new balance
-                    li.categories__item.category
-                      label.category__label.label
-                        input(type="radio" name="brands").category__radio.radio
-                        .category__radio-fake.radio-fake
-                        .category__name nike
-                    li.categories__item.category
-                      label.category__label.label
-                        input(type="radio" name="brands").category__radio.radio
-                        .category__radio-fake.radio-fake
-                        .category__name puma
-                    li.categories__item.category
-                      label.category__label.label
-                        input(type="radio" name="brands").category__radio.radio
-                        .category__radio-fake.radio-fake
-                        .category__name reebok
-                    li.categories__item.category
-                      label.category__label.label
-                        input(type="radio" name="brands").category__radio.radio
-                        .category__radio-fake.radio-fake
-                        .category__name vans
-                li.filters__item.filter.filter_price
-                  .filter__title.title
-                    .title__text.no-top-border.no-right-border Цена
-                    a(href="#").title__icon.no-top-border
-                      i.fas.fa-angle-down
-                  .filter__content.price.no-top-border
-                    .price__borders
-                      .price__from.price-input
-                        .price-input__text От
-                        input(type="text").price-input__input
-                      .price__to.price-input
-                        .price-input__text До
-                        input(type="text").price-input__input
-                    .price__slider
-                      input(type="text" id="price-slider").price__input-slider
-                li.filters__item.filter.filter_price
-                  .filter__title.title
-                    .title__text.no-top-border.no-right-border Цвета
-                    a(href="#").title__icon.no-top-border
-                      i.fas.fa-angle-down
-                  ul.filter__content.no-top-border.colors
-                    .colors__row
-                      li.colors__item
-                        label.colors__label.label
-                          input(type="checkbox" name="colors").colors__checkbox.checkbox
-                          .colors__checkbox-fake.checkbox-fake(data-color="white")
-                      li.colors__item
-                        label.colors__label.label
-                          input(type="checkbox" name="colors").colors__checkbox.checkbox
-                          .colors__checkbox-fake.checkbox-fake(data-color="black")
-                      li.colors__item
-                        label.colors__label.label
-                          input(type="checkbox" name="colors").colors__checkbox.checkbox
-                          .colors__checkbox-fake.checkbox-fake(data-color="grey")
-                      li.colors__item
-                        label.colors__label.label
-                          input(type="checkbox" name="colors").colors__checkbox.checkbox
-                          .colors__checkbox-fake.checkbox-fake(data-color="yellow")
-                      li.colors__item
-                        label.colors__label.label
-                          input(type="checkbox" name="colors").colors__checkbox.checkbox
-                          .colors__checkbox-fake.checkbox-fake(data-color="orange")
-                      li.colors__item
-                        label.colors__label.label
-                          input(type="checkbox" name="colors").colors__checkbox.checkbox
-                          .colors__checkbox-fake.checkbox-fake(data-color="red")
-                    .colors__row
-                      li.colors__item
-                        label.colors__label.label
-                          input(type="checkbox" name="colors").colors__checkbox.checkbox
-                          .colors__checkbox-fake.checkbox-fake(data-color="blue")
-                      li.colors__item
-                        label.colors__label.label
-                          input(type="checkbox" name="colors").colors__checkbox.checkbox
-                          .colors__checkbox-fake.checkbox-fake(data-color="green")
-                      li.colors__item
-                        label.colors__label.label
-                          input(type="checkbox" name="colors").colors__checkbox.checkbox
-                          .colors__checkbox-fake.checkbox-fake(data-color="brown")
-                      li.colors__item
-                        label.colors__label.label
-                          input(type="checkbox" name="colors").colors__checkbox.checkbox
-                          .colors__checkbox-fake.checkbox-fake(data-color="pink")
-                      li.colors__item
-                        label.colors__label.label
-                          input(type="checkbox" name="colors").colors__checkbox.checkbox
-                          .colors__checkbox-fake.checkbox-fake(data-color="purple")
-                      li.colors__item
-                        label.colors__label.label
-                          input(type="checkbox" name="colors").colors__checkbox.checkbox
-                          .colors__checkbox-fake.checkbox-fake(data-color="rainbow")
-                li.filters__item.filter.filter_price
-                  .filter__title.title
-                    .title__text.no-top-border.no-right-border Размер
-                    a(href="#").title__icon.no-top-border
-                      i.fas.fa-angle-down
-                  ul.filter__content.no-top-border.sizes
-                    .sizes__col
-                      li.sizes__item
-                        label.sizes__label.label
-                          input(type="radio" name="sizes").sizes__radio.radio
-                          .sizes__radio-fake.radio-fake
-                          .sizes__name 28-29
-                      li.sizes__item
-                        label.sizes__label.label
-                          input(type="radio" name="sizes").sizes__radio.radio
-                          .sizes__radio-fake.radio-fake
-                          .sizes__name 28-29
-                      li.sizes__item
-                        label.sizes__label.label
-                          input(type="radio" name="sizes").sizes__radio.radio
-                          .sizes__radio-fake.radio-fake
-                          .sizes__name 28-29
-                      li.sizes__item
-                        label.sizes__label.label
-                          input(type="radio" name="sizes").sizes__radio.radio
-                          .sizes__radio-fake.radio-fake
-                          .sizes__name 28-29
-                    .sizes__col
-                      li.sizes__item
-                        label.sizes__label.label
-                          input(type="radio" name="sizes").sizes__radio.radio
-                          .sizes__radio-fake.radio-fake
-                          .sizes__name 28-29
-                      li.sizes__item
-                        label.sizes__label.label
-                          input(type="radio" name="sizes").sizes__radio.radio
-                          .sizes__radio-fake.radio-fake
-                          .sizes__name 28-29
-                      li.sizes__item
-                        label.sizes__label.label
-                          input(type="radio" name="sizes").sizes__radio.radio
-                          .sizes__radio-fake.radio-fake
-                          .sizes__name 28-29
-                      li.sizes__item
-                        label.sizes__label.label
-                          input(type="radio" name="sizes").sizes__radio.radio
-                          .sizes__radio-fake.radio-fake
-                          .sizes__name 28-29
-                    .sizes__col
-                      li.sizes__item
-                        label.sizes__label.label
-                          input(type="radio" name="sizes").sizes__radio.radio
-                          .sizes__radio-fake.radio-fake
-                          .sizes__name 28-29
-                      li.sizes__item
-                        label.sizes__label.label
-                          input(type="radio" name="sizes").sizes__radio.radio
-                          .sizes__radio-fake.radio-fake
-                          .sizes__name 28-29
-                      li.sizes__item
-                        label.sizes__label.label
-                          input(type="radio" name="sizes").sizes__radio.radio
-                          .sizes__radio-fake.radio-fake
-                          .sizes__name 28-29
-                      li.sizes__item
-                        label.sizes__label.label
-                          input(type="radio" name="sizes").sizes__radio.radio
-                          .sizes__radio-fake.radio-fake
-                          .sizes__name 28-29
-            .aside__banner.banner
-              .banner__img
-              .banner__info.info
-                .info__text.info__text_banner woman's air max 270
-                .info__price.info__price_banner 3 990
-          .content
-            .content__header
-              .content__view.view
-                .view__title.title
-                  .title__text.title__text_view.no-left-border Вид
-                  a(href="#").title__icon.title__icon_view.no-left-border.active
-                    i.fas.fa-th
-                  a(href="#").title__icon.title__icon_view.no-left-border
-                    i.fas.fa-th-list
-              .content__sort.sort
-                  .sort__title.title
-                    .title__text.no-left-border Сортировать
-                    a(href="#").title__icon.title__icon_sort.no-left-border
-                      i.fas.fa-angle-down
-            ul.content__goods.goods
-              li.goods__item.product
-                  .product__text
-                    .product__company Nike
-                    .product__name Men's Air More Uptempo
-                  img(src="images/1.png").product__img
-                  .product__bottom-row
-                      a.btn.btn_more.product__btn(href="#") Подробнее
-                      .product__price 2 590 р
-              li.goods__item.product.active
-                  .product__sale 20%
-                  a(href="#").product__like-link
-                    i.fas.fa-heart.product__like
-                  .product__text
-                    .product__company Nike
-                    .product__name Men's Air More Uptempo
-                  img(src="images/1.png").product__img
-                  .product__bottom-row
-                      a.btn.btn_more.product__btn(href="#") Подробнее
-                      .product__price 2 590 р
-              li.goods__item.product
-                  .product__text
-                    .product__company Nike
-                    .product__name Men's Air More Uptempo
-                  img(src="images/3.png").product__img
-                  .product__bottom-row
-                    a.btn.btn_more.product__btn(href="#") Подробнее
-                    .product__price 2 590 р
-              li.goods__item.product
-                  .product__text
-                    .product__company Nike
-                    .product__name Men's Air More Uptempo
-                  img(src="images/4.png").product__img
-                  .product__bottom-row
-                    a.btn.btn_more.product__btn(href="#") Подробнее
-                    .product__price 2 590 р
-              li.goods__item.product
-                  .product__text
-                    .product__company Nike
-                    .product__name Men's Air More Uptempo
-                  img(src="images/1.png").product__img
-                  .product__bottom-row
-                    a.btn.btn_more.product__btn(href="#") Подробнее
-                    .product__price 2 590 р
-              li.goods__item.product
-                  .product__text
-                    .product__company Nike
-                    .product__name Men's Air More Uptempo
-                  img(src="images/2.png").product__img
-                  .product__bottom-row
-                    a.btn.btn_more.product__btn(href="#") Подробнее
-                    .product__price 2 590 р
-              li.goods__item.product
-                  .product__text
-                    .product__company Nike
-                    .product__name Men's Air More Uptempo
-                  img(src="images/3.png").product__img
-                  .product__bottom-row
-                    a.btn.btn_more.product__btn(href="#") Подробнее
-                    .product__price 2 590 р
-              li.goods__item.product
-                  .product__text
-                    .product__company Nike
-                    .product__name Men's Air More Uptempo
-                  img(src="images/4.png").product__img
-                  .product__bottom-row
-                    a.btn.btn_more.product__btn(href="#") Подробнее
-                    .product__price 2 590 р
-            .content__pagination.pagination
-              a(href="#").pagination__prev.pagination__icon
-                i.fas.fa-angle-double-left
-              ul.pagination__pages.pages
-                li.pages__item
-                  a(href="#").pagination__icon
-                    span.pages__text 1
-                li.pages__item.pagination__icon
-                  a(href="#").pagination__icon
-                    span.pages__text 2
-                li.pages__item.pagination__icon
-                  a(href="#").pagination__icon.active
-                    span.pages__text 3
-                li.pages__item.pagination__icon
-                  a(href="#").pagination__icon
-                    span.pages__text 4
-                li.pages__item.pagination__icon
-                  a(href="#").pagination__icon
-                    span.pages__text 5
-              a(href="#").pagination__next.pagination__icon
-                i.fas.fa-angle-double-right
-    footer.footer
-      .container.container_footer
-        .footer__pay-info.pay-info
-          .footer__logo.logo
-            a(href="#") sneakers
-          .footer__pay-logos.pay-info__logos
-            img(src="images/logo-visa.png").pay-logos__visa.pay-info__img
-            img(src="images/master-card.png").pay-logos__mc.pay-info__img
-          .pay-info__pay-text Вы можете оплатить покупки наличными при получении, либо выбрать другой 
-            a(href="#").pay-info__main способ оплаты
-        ul.footer__cols
-          li.footer__col
-            .footer__title аккаунт
-            ul.footer__list.footer-list
-              li.footer-list__item
-                a.footer-list__link(href="#") вход 
-                span |
-                a.footer-list__link(href="#")  регистрация
-              li.footer-list__item
-                a.footer-list__link(href="#") корзина
-          li.footer__col
-            .footer__title навигация
-            ul.footer__list.footer-list
-              li.footer-list__item
-                a.footer-list__link(href="#") новая коллекция
-              li.footer-list__item
-                a.footer-list__link(href="#") мужские
-              li.footer-list__item
-                a.footer-list__link(href="#") женские
-              li.footer-list__item
-                a.footer-list__link(href="#") детские
-              li.footer-list__item
-                a.footer-list__link(href="#") распродажа
-              li.footer-list__item
-                a.footer-list__link(href="#") магазин
-          li.footer__col
-            .footer__title компания
-            ul.footer__list.footer-list
-              li.footer-list__item
-                a.footer-list__link(href="#") о нас
-              li.footer-list__item
-                a.footer-list__link(href="#") политика конфиденциальности
-              li.footer-list__item
-                a.footer-list__link(href="#") справка и помощь
-              li.footer-list__item
-                a.footer-list__link(href="#") контакты
+  .wrapper
+    section.section.section_main
+      .container.container_main
+        header.header
+          .header__contacts.contacts
+            ul.contacts__info.contacts-info
+              li.contacts-info__item
+                i.fas.fa-phone.contacts-info__icon
+                .contacts-info__text 8 (800) 555-35-35
+              li.contacts-info__item
+                .contacts-info__icon
+                  i.fa.fa-envelope
+                .contacts-info__text sales@artislunch.com
+            ul.contacts__socials.socials
+              li.socials__item
+                a(href="#").socials__link
+                  i.fab.fa-vk
+          .header__row
+            a(href="#").logo.header__logo
+              img(src="images/logo.png").logo__img
+            ul.menu.header__menu
+              li.menu__item
+                a(href="#").menu__link Преимущества
+              li.menu__item
+                a(href="#").menu__link Меню
+              li.menu__item
+                a(href="#").menu__link Контакты
+              li.menu__item
+                a(href="#").menu__link О компании
+        .section__info
+          .info
+            .info__text
+              .info__title 
+                span.accent-text ОБЕДЫ 
+                span.all-text — ЭТО ВКУСНО
+              .info__subtitle ДОСТАВКА ОБЕДОВ РЕСТОРАННОГО КАЧЕСТВА  ПО ДОСТУПНЫМ ЦЕНАМ
+              .info__descr Lorem ipsum dolor sit amet,  sit ametelit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,t enim ad minim veniam quis nostrud exercitation nisi ut aliquip ex ea commodo consequat.
+            ul.info__btns
+              li.info__btn
+                a(href="#").btn.btn_more 
+                  span.btn__text Читать больше
+              li.info__btn
+                a(href="#").btn.btn_order 
+                  span.btn__text Дегустация
+
+
+
+          
               
           
 
