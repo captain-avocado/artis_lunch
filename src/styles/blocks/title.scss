@@ -1,0 +1,44 @@
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__icon {
+    width: 35px;
+    height: 35px;
+    fill: $text-grey;
+  }
+
+  &__main-title {
+    font-family: 'AmaticSC';
+    font-weight: 700;
+    color: #000;
+    font-size: 50px;
+
+    width: fit-content;
+    position: relative;
+
+    margin-bottom: 12px;
+
+    &:after {
+      position: absolute;
+      content: '';
+      width: 40px;
+      height: 2px;
+      background-color: $accent-color;
+
+      top: 100%;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+
+  }
+
+  &__subtitle {
+    font-style: italic;
+    color: $text-grey;
+    font-weight: normal;
+    margin-bottom: $title-margin;
+  }
+
+}

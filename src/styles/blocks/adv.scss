@@ -1,0 +1,24 @@
+.adv {
+  color: $text-grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__list {
+    display: flex;
+  }
+
+  &__descr {
+    width: 750px;
+
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  &__item {
+    flex: 1;
+    &:not(:last-of-type) {
+      margin-right: 30px;
+    }
+  }
+}
