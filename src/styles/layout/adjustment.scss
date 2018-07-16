@@ -67,6 +67,23 @@ body {
         height: fit-content;
     }
 
+    &_form {
+        background-image: url('../images/bg-form.jpg');
+        background-size: cover;
+        background-position-y: center;
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            background-color: #000;
+            opacity: .45;
+        }
+    }
+
 }
 
 .container {
@@ -82,8 +99,9 @@ body {
         flex-direction: column;
     }
 
-
-    
-
+    &_form {
+        // display: flex;
+        // justify-content: center;
+    }
    
 }

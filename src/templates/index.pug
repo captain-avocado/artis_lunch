@@ -239,6 +239,38 @@ block content
               a(href="#").slider-dots__link
             li.slider-dots__item
               a(href="#").slider-dots__link
+    section.section.section_form
+      .container.container_form
+        form.form
+          .form__left-col
+            img(src="images/form.jpg").form__img
+          .form__right-col
+            .form__title Форма обратной связи
+            ul.form__inputs.inputs
+              li.inputs__item
+                input(placeholder="Ваше имя").input.input_name
+                i.fas.fa-pencil-alt.inputs__icon
+              li.inputs__item
+                input(placeholder="Ваш телефон").input.input_phone
+                i.fas.fa-phone.inputs__icon
+              li.inputs__item
+                input(placeholder="Ваша почта").input.input_mail
+                i.fa.fa-envelope.inputs__icon
+              li.inputs__item.inputs__item_comment
+                textarea(name="comment", cols="30", rows="10")(placeholder="Заказать бесплатную дегустацию*").input.input_comment
+                i.fa.fa-comment.inputs__icon
+            button(type="submit").form__btn.btn.btn_submit 
+              span.btn__text Отправить
+    section.section.section_history
+      .container.container_history
+        .history
+          .history__title.title  
+            svg.title__icon
+              use(xlink:href="images/sprite.svg#plate")
+            .title__main-title
+              span.accent-text Наша 
+              span.all-text История
+            .title__subtitle Lorem ipsum dolor sit amet, consectetur adipiscin
 
 
 

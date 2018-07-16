@@ -1,0 +1,44 @@
+.form {
+  width: 65%;
+  display: flex;
+  z-index: 100;
+
+  // height: 470px;
+
+  &__title {
+    font-family: 'AmaticSC';
+    font-size: 40px;
+    color: #000;
+    font-weight: 700;
+    margin-bottom: 35px;
+  }
+  &__left-col {
+    max-width: 50%;
+    // background-image: url('../images/form.jpg');
+    // background-size: cover;
+    // background-position-y: center;
+  }
+  &__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__right-col {
+    width: 50%;
+    background-color: #fff;
+    padding: 40px;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__btn {
+    background-color: $accent-color;
+    color: #fff;
+    border: none;
+    outline: none;
+    z-index: 100;
+    cursor: pointer;
+  }
+}
