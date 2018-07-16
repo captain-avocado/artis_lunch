@@ -1,16 +1,19 @@
+
+// подключение самописных модулей
 // import search from './modules/search';
 // search();
 
-// import 'jquery-ui';
-
+// подключение файлов jquery скриптов как модулей
 import 'ion-rangeslider/css/ion.rangeSlider.css';
 import 'ion-rangeslider/css/ion.rangeSlider.skinHTML5.css';
 import 'ion-rangeslider/js/ion.rangeSlider.min.js';
 
+// подключение овл-карусели
 // import 'owl.carousel/dist/assets/owl.carousel.min.css';
 // import 'owl.carousel/dist/assets/owl.theme.default.min.css';
 // import 'owl.carousel';
 
+//активация горизонтального слайдера
 $('#price-slider').ionRangeSlider({
     min: 0,
     max: 20000,
