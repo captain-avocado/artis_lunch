@@ -1,32 +1,30 @@
 .cart {
-
-  display: flex;
-  align-items: center;
-
-  &__goods {
-    margin-right: 5px;
-
-    position: relative;
+  position: relative;
+  &__icon {
+    height: 20px;
+    width: 18px;
+    z-index: -10;
   }
 
   &__num {
+    font-size: 11px;
+    color: #fff;
     position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(0, -90%);
-
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: $bg-red;
-    color: $white;
-    text-align: center;
-    line-height: 25px;
+    top: -30%;
+    left: 75%;
+    z-index: 20;
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 20px;
+      height: 20px;
+      background-color: #3151cc;
+      border-radius: 50%;
+      z-index: -5;
+    }
   }
-
-  &__icon {
-    width: 25px;
-    height: 25px;
-  }
-
 }

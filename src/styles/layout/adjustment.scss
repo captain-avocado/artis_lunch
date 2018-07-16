@@ -1,14 +1,34 @@
 body {
     //fonts
-    font-family: 'Roboto';
-    font-size: 16px;
+    font-family: 'Montserrat';
+    font-size: 11px;
+    color: $text-black;
 
     position: relative;
 }
 
 .container {
-    width: 90%;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 1140px;
+
+    &_header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &_menu {
+        display: flex;
+        justify-content: center;
+    }
+
+    &_slider {
+        position: relative;
+    }
+
+    &_main-content {
+        display: flex;
+    }
+
+    &_footer {
+        display: flex;
+    }
 }

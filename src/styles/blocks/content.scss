@@ -1,0 +1,23 @@
+.content {
+
+  &__goods {
+    margin-left: 70px;
+    margin-top: 75px;
+  }
+  &__header {
+    display: flex;
+  }
+
+  &__view {
+    width: 420px;
+  }
+
+  &__sort {
+    width: 360px;
+  }
+
+  &__pagination {
+    margin-left: 70px;
+    margin-bottom: 70px;
+  }
+}
