@@ -1,0 +1,23 @@
+.meals {
+  font-style: italic;
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    
+    
+    font-style: italic;
+
+    &:not(:last-of-type) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__name {
+    color: $text-black;
+  }
+
+  &__weight {
+    color: $text-grey;
+  }
+}

@@ -63,11 +63,14 @@ body {
         }
     }
 
+    &_menu {
+        height: fit-content;
+    }
 
 }
 
 .container {
-    width: 1140px;
+    width: 90%;
     &:not(.container_main) {
         display: flex;
         align-items: center;
@@ -78,6 +81,7 @@ body {
         display: flex;
         flex-direction: column;
     }
+
 
     
 

@@ -1,0 +1,54 @@
+.menu-meal {
+  // display: flex;
+  // flex-wrap: wrap;
+
+  width: 100%;
+
+  &__title-row {
+    position: relative;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed $text-grey;
+  }
+
+  &__meals {
+    padding-top: 10px;
+  }
+
+  &__row {
+    display: flex;
+    &:not(:last-of-type) {
+      margin-bottom: 80px;
+    }
+    &:last-of-type {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__item {
+    flex: 1;
+    
+
+
+    &:not(:last-of-type) {
+      margin-right: 30px;
+    }
+
+  }
+
+
+  &__day {
+    font-size: 30px;
+    font-family: 'AmaticSC';
+    font-weight: 700;
+    color: $text-black;
+  }
+
+  &__gr {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    font-style: italic;
+  }
+
+}

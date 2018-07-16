@@ -1,0 +1,27 @@
+.slider-dots {
+  display: flex;
+  &__item {
+    width: 15px;
+    height: 15px;
+    border: 2px solid $accent-color;
+    border-radius: 50%;
+    transition: width .5s, border-radius .5s;
+
+    &:not(:last-of-type) {
+      margin-right: 10px;
+    }
+
+    &.active {
+      border-radius: 10px;
+      width: 30px;
+      background-color: $accent-color;
+    }
+
+  }
+
+  &__link {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+}
