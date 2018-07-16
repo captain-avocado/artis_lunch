@@ -1,0 +1,28 @@
+.num {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-family: 'AmaticSC';
+  text-align: center;
+
+  color: #fff;
+
+  &__icon {
+    width: 70px;
+    height: 70px;
+    fill: #fff;
+    stroke-width: 2px;
+  }
+
+  &__number {
+    font-size: 60px;
+    font-weight: 700;
+  }
+
+  &__descr {
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+}

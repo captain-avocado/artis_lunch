@@ -1,0 +1,12 @@
+.nums {
+  display: flex;
+  width: 100%;
+  z-index: 100;
+  &__item {
+    flex: 1;
+
+    &:not(:last-of-type) {
+      margin-right: 30px;
+    }
+  }
+}
