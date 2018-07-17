@@ -47,6 +47,9 @@
     left: 80%  !important;
     transform: translateX(-50%)  !important;
   }
+  
+}
 
-
+button.owl-next, button.owl-prev {
+  display: none !important;
 }

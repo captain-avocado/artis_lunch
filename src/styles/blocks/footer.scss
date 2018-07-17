@@ -1,4 +1,5 @@
 .footer {
+  width: 100%;
   z-index: 100;
   display: flex;
   flex-direction: column;
@@ -16,6 +17,7 @@
     align-items: center;
 
     text-align: center;
+    margin-bottom: 60px;
   }
 
   &__logo {
@@ -30,11 +32,16 @@
   &__lists {
     width: 100%;
     display: flex;
+    flex: 1;
+    margin-bottom: 60px;
+  }
+
+  &__left-col {
+    display: flex;
   }
 
   &__left-col, &__right-col {
     width: 50%;
-    display: flex;
   }
 
   &__contacts, &__working-time {
@@ -50,7 +57,11 @@
   }
 
   &__socials {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+  }
+  &__map {
+    display: flex;
+    flex-direction: column;
   }
 
 }

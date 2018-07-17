@@ -1,22 +1,43 @@
 // подключение самописных модулей
 // import animateScroll from './modules/animateScroll';
 // animateScroll(1000,2000);
-import 'ion-rangeslider/css/ion.rangeSlider.css';
-import 'ion-rangeslider/css/ion.rangeSlider.skinHTML5.css';
-import 'ion-rangeslider/js/ion.rangeSlider.min.js';
 
 // подключение овл-карусели
 import 'owl.carousel/dist/assets/owl.carousel.min.css';
 import 'owl.carousel/dist/assets/owl.theme.default.min.css';
 import 'owl.carousel';
 
-$('#more').click(function() { 
+
+import googleMaps from 'google-maps';
+import {initMap} from './modules/initMap';
+googleMaps.KEY = 'AIzaSyDb-hSAeXf2JnxUCPnrIL8W54NMBW8rCRs';
+googleMaps.load(initMap);
+
+
+// $('.menu__item').click(function(e) {
+//     e.preventDefault();
+//     const item = e.currentTarget;
+//     const scrollIndex = item.data('scroll');
+//     const reqSection = $('section').filter(function(index) {
+//         return index === scrollIndex;
+//     });
+//     console.log(reqSection);
+
+//     // $('html, body').animate({
+//     //     scrollTop: $('.section_adv').offset().top,
+//     // }, 1000);
+// });
+
+
+$('#more').click(function(e) {
+    e.preventDefault(); 
     $('html, body').animate({
         scrollTop: $('.section_adv').offset().top,
     }, 1000);
 });
 
-$('#order').click(function() { 
+$('#order').click(function(e) { 
+    e.preventDefault(); 
     $('html, body').animate({
         scrollTop: $('.section_form').offset().top,
     }, 1000);
@@ -59,7 +80,7 @@ $(document).ready(function(){
     });
     $('.owl-dot').click(function (e) {
         e.preventDefault();
-        $('.owl-carousel').trigger('to.owl.carousel', [$(this).index(), 300]);
+        $('.owl-carousel').trigger('to.owl.carousel', [$(this).index(), 500]);
     });
     
 });

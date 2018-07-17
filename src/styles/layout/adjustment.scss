@@ -2,7 +2,7 @@ body {
     //fonts
     font-family: 'Open Sans';
     font-size: 14px;
-    color: #000;
+    color: $text-grey;
 
     position: relative;
 }
@@ -11,12 +11,10 @@ body {
     display: flex;
     justify-content: center;
     height: 100vh;
-    
+
     &:not(.section_nums) {
         min-height: 650px;
     }
-    color: $text-grey;
-
     &:not(.section_main) {
         padding: $section-padding 0;
     }
@@ -94,6 +92,7 @@ body {
 
     &_footer {
         background-image: url('../images/bg-footer.jpg');
+        padding-bottom: 20px !important;
         position: relative;
         &:before {
             content: '';
