@@ -1,7 +1,6 @@
 // подключение самописных модулей
-// import search from './modules/search';
-// search();
-
+// import animateScroll from './modules/animateScroll';
+// animateScroll(1000,2000);
 import 'ion-rangeslider/css/ion.rangeSlider.css';
 import 'ion-rangeslider/css/ion.rangeSlider.skinHTML5.css';
 import 'ion-rangeslider/js/ion.rangeSlider.min.js';
@@ -9,9 +8,23 @@ import 'ion-rangeslider/js/ion.rangeSlider.min.js';
 // подключение овл-карусели
 import 'owl.carousel/dist/assets/owl.carousel.min.css';
 import 'owl.carousel/dist/assets/owl.theme.default.min.css';
-
 import 'owl.carousel';
+
+$('#more').click(function() { 
+    $('html, body').animate({
+        scrollTop: $('.section_adv').offset().top,
+    }, 1000);
+});
+
+$('#order').click(function() { 
+    $('html, body').animate({
+        scrollTop: $('.section_form').offset().top,
+    }, 1000);
+});
+
+
 $(document).ready(function(){
+
     $('.owl-carousel').owlCarousel({
         autoplay: true,
         autoplayTimeout: 5000,
