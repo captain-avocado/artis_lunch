@@ -25,19 +25,41 @@ $('#order').click(function() {
 
 $(document).ready(function(){
 
-    $('.owl-carousel').owlCarousel({
-        autoplay: true,
-        autoplayTimeout: 5000,
-        autoplayHoverPause: true,
+    $('.owl-history').owlCarousel({
+ 
         dots: false,
-        nav: true,
-        // navClass: '.owl-nav',
+        // nav: true,
         items: 1,
         loop: true,
-        // navigation: true, 
         slideSpeed: 300,
         paginationSpeed: 400,
         singleItem: true,
+        navContainer: '#owl-nav-history',
+        // navClass: ['.owl-prev', '.owl-next'],
+    });
+
+    $('.owl-next').click(function() {
+        $('.owl-history').trigger('next.owl.carousel', [750]);
+    });
+    $('.owl-prev').click(function() {
+        $('.owl-history').trigger('prev.owl.carousel', [750]);
+    });
+
+
+    $('.owl-menu').owlCarousel({
+        autoplayTimeout: 5000,
+        autoplayHoverPause: true,
+        dots: true,
+        dotsContainer:'#owl-dots',
+        items: 1,
+        loop: false,
+        slideSpeed: 300,
+        paginationSpeed: 400,
+        singleItem: true,
+    });
+    $('.owl-dot').click(function (e) {
+        e.preventDefault();
+        $('.owl-carousel').trigger('to.owl.carousel', [$(this).index(), 300]);
     });
     
 });
