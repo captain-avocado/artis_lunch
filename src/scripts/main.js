@@ -21,7 +21,7 @@ $(document).ready(function(){
         // navClass: '.owl-nav',
         items: 1,
         loop: true,
-        navigation: true, 
+        // navigation: true, 
         slideSpeed: 300,
         paginationSpeed: 400,
         singleItem: true,

@@ -11,11 +11,19 @@ body {
     display: flex;
     justify-content: center;
     height: 100vh;
+    
+    &:not(.section_nums) {
+        min-height: 650px;
+    }
     color: $text-grey;
 
     &:not(.section_main) {
         padding: $section-padding 0;
     }
+
+    // &_footer {
+    //     padding-bottom: 20px; 
+    // }
 
     &_main {
         position: relative;
@@ -81,6 +89,21 @@ body {
             left: 0;
             background-color: #000;
             opacity: .45;
+        }
+    }
+
+    &_footer {
+        background-image: url('../images/bg-footer.jpg');
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            background-color: #fff;
+            opacity: .1;
         }
     }
 

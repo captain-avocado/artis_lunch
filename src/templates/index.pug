@@ -257,7 +257,7 @@ block content
                 input(placeholder="Ваша почта").input.input_mail
                 i.fa.fa-envelope.inputs__icon
               li.inputs__item.inputs__item_comment
-                textarea(name="comment", cols="30", rows="10")(placeholder="Заказать бесплатную дегустацию*").input.input_comment
+                textarea(name="comment", cols="30", rows="10" placeholder="Заказать бесплатную дегустацию*").input.input_comment
                 i.fa.fa-comment.inputs__icon
             button(type="submit").form__btn.btn.btn_submit 
               span.btn__text Отправить
@@ -308,11 +308,44 @@ block content
                           img.owl-img(src="images/milk-cult.jpg")
                 .owl-nav
                     .owl-prev
+                      i.fas.fa-angle-left
                     .owl-next
+                      i.fas.fa-angle-right
               img(src="images/artis-logo.png").history__artis-logo
-
-         
-            
+    section.section.section_footer
+      .container.container_footer
+        footer.footer
+          .footer__about
+            a(href="#").footer__logo.logo
+              img(src="images/logo.png").logo__img
+            .footer__descr Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+          .footer__lists
+            .footer__right-col.footer__map
+              .footer__title Карта
+              .map__display#map.map
+            .footer__left-col
+              .footer__working-time
+                .footer__title Часы работы
+                ul.footer__text-list.text-list
+                  li.text-list__item Понедельник - Пятница
+                  li.text-list__item.accent-text С 10:00 до 19:00
+                  li.text-list__item Суббота - Воскресенье
+                  li.text-list__item.accent-text Выходные
+              .footer__contacts
+                .footer__title Контакты
+                ul.footer__text-list.text-list
+                  li.text-list__item Петровский проспект, 20, СПб, 197110
+                  li.text-list__item +7 (800) 555-35-35
+                  li.text-list__item.accent-text sales@artislunch.com
+          .footer__bottom-info
+            ul.footer__socials.socials_round
+              li.socials__item
+                a(href="#").socials__link.socials__link_round
+                  i.fab.fa-vk
+            .footer__copyright 
+              span.all-text © 
+              span.accent-text ArtisLunch 
+              span.all-text 2018 Все права сохранены         
            
 
           
