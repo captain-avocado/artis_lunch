@@ -1,3 +1,4 @@
+//AmaticSC
 @font-face {
     font-family: 'AmaticSC';
     src: url("../fonts/AmaticSC/AmaticSC-Regular.woff") format("woff");
@@ -9,3 +10,66 @@
     src: url("../fonts/AmaticSC/AmaticSC-Bold.woff") format("woff");
     font-weight: 700;
 }
+
+//Open Sans
+@font-face {
+    font-family: 'OpenSans';
+    src: url("../fonts/OpenSans/opensans-regular-webfont.woff") format("woff");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url("../fonts/OpenSans/opensans-semibold-webfont.woff") format("woff"),
+        url("../fonts/OpenSans/opensans-semibold-webfont.woff2") format("woff2");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url("../fonts/OpenSans/opensans-semibolditalic-webfont.woff") format("woff"),
+        url("../fonts/OpenSans/opensans-semibolditalic-webfont.woff2") format("woff2");
+    font-weight: 600;
+    font-style: italic;
+}
+
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url("../fonts/OpenSans/opensans-italic-webfont.woff") format("woff"),
+        url("../fonts/OpenSans/opensans-italic-webfont.woff2") format("woff2");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url("../fonts/OpenSans/opensans-light-webfont.woff") format("woff"),
+        url("../fonts/OpenSans/opensans-light-webfont.woff2") format("woff2");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url("../fonts/OpenSans/opensans-lightitalic-webfont.woff") format("woff"),
+        url("../fonts/OpenSans/opensans-lightitalic-webfont.woff2") format("woff2");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url("../fonts/OpenSans/opensans-bold-webfont.woff") format("woff"),
+        url("../fonts/OpenSans/opensans-bold-webfont.woff2") format("woff2");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url("../fonts/OpenSans/opensans-bolditalic-webfont.woff") format("woff"),
+        url("../fonts/OpenSans/opensans-bolditalic-webfont.woff2") format("woff2");
+    font-weight: 700;
+    font-style: italic;
+}
+
+
