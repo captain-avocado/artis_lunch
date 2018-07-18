@@ -55,6 +55,7 @@ body {
         background-image: url('../images/bg-nums.jpeg');
         background-size: cover;
         background-position-y: center;
+        background-attachment: fixed;
 
         position: relative;
         &:before {
@@ -78,6 +79,8 @@ body {
         background-size: cover;
         background-position-y: center;
         position: relative;
+        background-attachment: fixed;
+
         &:before {
             content: '';
             position: absolute;
@@ -101,6 +104,8 @@ body {
         background-size: cover;
         background-position-y: center;
         position: relative;
+        background-attachment: fixed;
+        
         &:before {
             content: '';
             position: absolute;
