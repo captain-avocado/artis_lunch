@@ -13,16 +13,15 @@ body {
     justify-content: center;
     height: 100vh;
 
-    &:not(.section_nums) {
-        min-height: 650px;
+    &:not(.fit-content) {
+        min-height: 720px;
     }
+    
     &:not(.section_main) {
         padding: $section-padding 0;
     }
 
-    // &_footer {
-    //     padding-bottom: 20px; 
-    // }
+    
 
     &_main {
         position: relative;
@@ -88,6 +87,29 @@ body {
             left: 0;
             background-color: #000;
             opacity: .45;
+        }
+    }
+
+
+    &_history {
+        padding: 70px 0 !important;
+    }
+
+    &_reviews {
+        height: fit-content;
+        background-image: url('../images/bg-reviews.jpg');
+        background-size: cover;
+        background-position-y: center;
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            background-color: #000;
+            opacity: .65;
         }
     }
 

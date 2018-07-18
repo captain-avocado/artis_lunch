@@ -1,6 +1,7 @@
 .owl {
 
   &-wrapper {
+    height: 100%;
     position: relative;
     &:hover {
       .owl-prev {
@@ -15,6 +16,12 @@
       }
     }
   }
+
+  //fixme
+  &-carousel, &-stage-outer {
+    height: 100%;
+  }
+
   &-prev, &-next {
     font-size: 20px !important;
     display: flex  !important;
