@@ -55,8 +55,38 @@
     transform: translateX(-50%)  !important;
   }
   
+
+
+  //clients
+  &-clients {
+    height: 250px;
+
+    & .owl-stage {
+      height: 100%;
+    }
+
+    & .owl-item {
+      height: 100%;
+    }
+    &-item {
+      height: 100% !important;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &-img {
+      width: auto;
+      max-width: 70%;
+      height: auto;
+      max-height: 100%;
+      filter: grayscale(1);
+    }
+  }
+
 }
 
 button.owl-next, button.owl-prev {
   display: none !important;
 }
+
+

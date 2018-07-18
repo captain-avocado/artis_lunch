@@ -451,7 +451,25 @@ block content
           a(href="#").reviews__btn.btn.btn_order
             span.btn__text Читать
 
-
+    section.section.section_clients.fit-content
+      .container.container_clients
+        .clients
+          .clients__title.title
+            svg.title__icon
+              use(xlink:href="images/sprite.svg#plate")
+            .title__main-title
+              span.accent-text Наши 
+              span.all-text Клиенты
+            .title__subtitle Lorem ipsum dolor sit amet, consectetur adipiscin
+          .clients__slider
+            .owl-wrapper
+              .owl-carousel.owl-theme.owl-loaded.owl-clients
+                        .item.owl-clients-item
+                          img.owl-clients-img(src="images/arla.png")
+                        .item.owl-clients-item
+                          img.owl-clients-img(src="images/lsr.png")
+                        .item.owl-clients-item
+                          img.owl-clients-img(src="images/kanat.png")
     section.section.section_footer
       .container.container_footer
         footer.footer

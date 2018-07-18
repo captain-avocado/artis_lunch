@@ -75,6 +75,19 @@ $(document).ready(function(){
         },
     });
 
+    $('.owl-clients').owlCarousel({
+ 
+        dots: false,
+        margin: 30,
+        items: 3,
+        loop: true,
+        slideSpeed: 300,
+        paginationSpeed: 400,
+        // singleItem: true,
+        // navContainer: '#owl-nav-history',
+        // navClass: ['.owl-prev', '.owl-next'],
+    });
+
     $('.owl-history').owlCarousel({
  
         dots: false,

@@ -113,6 +113,10 @@ body {
         }
     }
 
+    &_clients {
+        height: fit-content;
+    }
+
     &_footer {
         background-image: url('../images/bg-footer.jpg');
         padding-bottom: 20px !important;
