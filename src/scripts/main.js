@@ -1,8 +1,5 @@
-// подключение самописных модулей
-// import animateScroll from './modules/animateScroll';
-// animateScroll(1000,2000);
+import 'jquery-validation';
 
-// подключение овл-карусели
 import 'owl.carousel/dist/assets/owl.carousel.min.css';
 import 'owl.carousel/dist/assets/owl.theme.default.min.css';
 import 'owl.carousel';
@@ -59,7 +56,33 @@ $('#order').click(function(e) {
 });
 
 
+$.validator.addMethod('customphone', function (phone_number, element) {
+    phone_number = phone_number.replace(/\s+/g, ''); 
+    return this.optional(element) || 
+		phone_number.match(/^\+?[78][-(]?\d{3}\)?-?\d{3}-?\d{2}-?\d{2}$/);
+});
+
+
+
 $(document).ready(function(){
+
+
+    $('#form').validate({
+        rules: {
+            name: {
+                required: true,
+                minlength: 2,
+            },
+            phone: 'customphone',
+            mail: {
+                required: true,
+                email: true,
+            },
+        },
+        errorPlacement: function(){
+            return false;
+        },
+    });
 
     $('.owl-history').owlCarousel({
  

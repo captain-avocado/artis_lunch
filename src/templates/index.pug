@@ -370,20 +370,20 @@ block content
               a(href="#").slider-dots__link 
     section.section.section_form
       .container.container_form
-        form.form
+        form.form#form
           .form__left-col
             img(src="images/form.jpg").form__img
           .form__right-col
             .form__title Форма обратной связи
             ul.form__inputs.inputs
               li.inputs__item
-                input(placeholder="Ваше имя").input.input_name
+                input(placeholder="Ваше имя" name="name").input.input_name
                 i.fas.fa-pencil-alt.inputs__icon
               li.inputs__item
-                input(placeholder="Ваш телефон").input.input_phone
+                input(placeholder="Ваш телефон" name="phone").input.input_phone
                 i.fas.fa-phone.inputs__icon
               li.inputs__item
-                input(placeholder="Ваша почта").input.input_mail
+                input(placeholder="Ваша почта" name="mail").input.input_mail
                 i.fa.fa-envelope.inputs__icon
               li.inputs__item.inputs__item_comment
                 textarea(name="comment", cols="30", rows="10" placeholder="Заказать бесплатную дегустацию*").input.input_comment

@@ -44,6 +44,7 @@
   "dependencies": {
     "google-maps": "^3.3.0",
     "jquery": "^3.3.1",
+    "jquery-validation": "^1.17.0",
     "owl.carousel": "^2.3.4"
   }
 }
