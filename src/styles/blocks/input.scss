@@ -7,9 +7,19 @@
   outline: none;
   font-family: 'Open Sans';
 
+  transition: border .5s ease-out 0s;
+
   &_comment {
     resize: none;
   }
 
   
 }
+
+.error {
+  border: 1px solid red !important;
+}
+
+// .valid {
+//    border: 1px solid green !important;
+// }

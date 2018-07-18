@@ -16,29 +16,20 @@ numAnimation(0, 220, '#clients', 3000);
 numAnimation(0, 1300, '#dinners', 3000);
 numAnimation(0, 65, '#workers', 3000);
 
+$('.menu__item').click(function(e) {
+    e.preventDefault();
+    const item = $(e.currentTarget);
+    const scrollIndex = item.data('scroll');
 
-// $({numberValue: 0}).animate({numberValue: 1000}, {
-//     duration: 5000, // Скорость анимации, где 500 = 0,5 одной секунды, то есть 500 миллисекунд
-//     easing: 'linear',
-//     step: function(val) {
-//         $('.price').html(Math.ceil(val)); // Блок, где необходимо сделать анимацию
-//     },
-// });
+    //refactoring
+    const reqSection = $('section').filter(function(index) {
+        return index === scrollIndex;
+    });
 
-
-// $('.menu__item').click(function(e) {
-//     e.preventDefault();
-//     const item = e.currentTarget;
-//     const scrollIndex = item.data('scroll');
-//     const reqSection = $('section').filter(function(index) {
-//         return index === scrollIndex;
-//     });
-//     console.log(reqSection);
-
-//     // $('html, body').animate({
-//     //     scrollTop: $('.section_adv').offset().top,
-//     // }, 1000);
-// });
+    $('html, body').animate({
+        scrollTop: $(reqSection[0]).offset().top,
+    }, 1000);
+});
 
 
 $('#more').click(function(e) {
