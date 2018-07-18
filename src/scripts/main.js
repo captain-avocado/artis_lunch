@@ -76,7 +76,7 @@ $(document).ready(function(){
     });
 
     $('.owl-clients').owlCarousel({
- 
+        autoplay: true,
         dots: false,
         margin: 30,
         items: 3,
