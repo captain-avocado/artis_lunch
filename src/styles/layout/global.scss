@@ -35,3 +35,7 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+textarea, input {
+  font-size: inherit;
+}
