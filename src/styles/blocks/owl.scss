@@ -63,15 +63,19 @@
     display: flex;
     align-items: center;
 
+    background-size: cover;
+    background-position: center center;
+
     &-1 {
       background-image: url('../images/milk-cult.jpg');
-      background-size: cover;
-      background-position: center center;
+
      }
      &-2 {
       background-image: url('../images/milk-cult-2.jpg');
-      background-size: cover;
-      background-position: center center;
+
+     }
+     &-3 {
+      background-image: url('../images/selco.jpg');
      }
   }
 
