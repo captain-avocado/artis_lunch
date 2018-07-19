@@ -1,3 +1,5 @@
+// import $ from 'jquery';
+
 import numAnimation from './modules/numAnimation';
 import menu from './modules/menu';
 import animationScroll from './modules/animationScroll';
@@ -6,6 +8,10 @@ import googleMaps from 'google-maps';
 import {initMap} from './modules/_initMap';
 import _formValidation from './modules/_formValidation';
 import _owl from './modules/_owl';
+
+$(window).on('load', function() {
+    $('#before-load').find('i').fadeOut().end().delay(400).fadeOut('slow');
+});
 
 
 $(document).ready(function(){
@@ -24,6 +30,11 @@ $(document).ready(function(){
     $('#order').click(function(e) { 
         e.preventDefault(); 
         animationScroll('.section_form', 1000);
+    });
+
+    $('.footer__logo').click(function(e) {
+        e.preventDefault();
+        animationScroll('.section_main', 3000);
     });
 
     _formValidation();
