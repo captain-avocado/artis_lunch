@@ -1,132 +1,36 @@
-import 'jquery-validation';
-
-import 'owl.carousel/dist/assets/owl.carousel.min.css';
-import 'owl.carousel/dist/assets/owl.theme.default.min.css';
-import 'owl.carousel';
-
+import numAnimation from './modules/numAnimation';
+import menu from './modules/menu';
+import animationScroll from './modules/animationScroll';
 
 import googleMaps from 'google-maps';
-import {initMap} from './modules/initMap';
-googleMaps.KEY = 'AIzaSyDb-hSAeXf2JnxUCPnrIL8W54NMBW8rCRs';
-googleMaps.load(initMap);
-
-
-import numAnimation from './modules/numAnimation';
-numAnimation(0, 220, '#clients', 3000);
-numAnimation(0, 1300, '#dinners', 3000);
-numAnimation(0, 65, '#workers', 3000);
-
-$('.menu__item').click(function(e) {
-    e.preventDefault();
-    const item = $(e.currentTarget);
-    const scrollIndex = item.data('scroll');
-
-    //refactoring
-    const reqSection = $('section').filter(function(index) {
-        return index === scrollIndex;
-    });
-
-    $('html, body').animate({
-        scrollTop: $(reqSection[0]).offset().top,
-    }, 1000);
-});
-
-
-$('#more').click(function(e) {
-    e.preventDefault(); 
-    $('html, body').animate({
-        scrollTop: $('.section_adv').offset().top,
-    }, 1000);
-});
-
-$('#order').click(function(e) { 
-    e.preventDefault(); 
-    $('html, body').animate({
-        scrollTop: $('.section_form').offset().top,
-    }, 1000);
-});
-
-
-$.validator.addMethod('customphone', function (phone_number, element) {
-    phone_number = phone_number.replace(/\s+/g, ''); 
-    console.log(phone_number.length);
-    return this.optional(element) || (phone_number.length !== 0 &&
-		phone_number.match(/^\+?[78][-(]?\d{3}\)?-?\d{3}-?\d{2}-?\d{2}$/));
-});
-
+import {initMap} from './modules/_initMap';
+import _formValidation from './modules/_formValidation';
+import _owl from './modules/_owl';
 
 
 $(document).ready(function(){
 
+    numAnimation(0, 220, '#clients', 3000);
+    numAnimation(0, 1300, '#dinners', 3000);
+    numAnimation(0, 65, '#workers', 3000);
 
-    $('#form').validate({
-        rules: {
-            name: {
-                required: true,
-                minlength: 2,
-            },
-            phone: {
-                required: true,
-                'customphone': true,
-            },
-            mail: {
-                required: true,
-                email: true,
-            },
-        },
-        errorPlacement: function(){
-            return false;
-        },
+    menu('.menu__item');
+
+    $('#more').click(function(e) {
+        e.preventDefault(); 
+        animationScroll('.section_adv', 1000);
     });
 
-    $('.owl-clients').owlCarousel({
-        autoplay: true,
-        dots: false,
-        margin: 30,
-        items: 3,
-        loop: true,
-        slideSpeed: 300,
-        paginationSpeed: 400,
-        // singleItem: true,
-        // navContainer: '#owl-nav-history',
-        // navClass: ['.owl-prev', '.owl-next'],
+    $('#order').click(function(e) { 
+        e.preventDefault(); 
+        animationScroll('.section_form', 1000);
     });
 
-    $('.owl-history').owlCarousel({
- 
-        dots: false,
-        // nav: true,
-        items: 1,
-        loop: true,
-        slideSpeed: 300,
-        paginationSpeed: 400,
-        singleItem: true,
-        navContainer: '#owl-nav-history',
-        // navClass: ['.owl-prev', '.owl-next'],
-    });
+    _formValidation();
 
-    $('.owl-next').click(function() {
-        $('.owl-history').trigger('next.owl.carousel', [750]);
-    });
-    $('.owl-prev').click(function() {
-        $('.owl-history').trigger('prev.owl.carousel', [750]);
-    });
+    _owl();
 
-
-    $('.owl-menu').owlCarousel({
-        autoplayTimeout: 5000,
-        autoplayHoverPause: true,
-        dots: true,
-        dotsContainer:'#owl-dots',
-        items: 1,
-        loop: false,
-        slideSpeed: 300,
-        paginationSpeed: 400,
-        singleItem: true,
-    });
-    $('.owl-dot').click(function (e) {
-        e.preventDefault();
-        $('.owl-carousel').trigger('to.owl.carousel', [$(this).index(), 500]);
-    });
+    googleMaps.KEY = 'AIzaSyDb-hSAeXf2JnxUCPnrIL8W54NMBW8rCRs';
+    googleMaps.load(initMap);
     
 });

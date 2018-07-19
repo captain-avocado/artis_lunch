@@ -8,7 +8,6 @@ export default function numAnimation(startValue, endValue, blockName, animationD
             let scrollEvent = ($(window).scrollTop() + $(window).height()) > targetBlock.offset().top;
 
             if (scrollEvent && blockStatus) {
-                // console.log('staring');
                 blockStatus = false;
                 setTimeout(function() {
                     $({numberValue: startValue}).animate({numberValue: endValue}, {
