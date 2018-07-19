@@ -1,5 +1,3 @@
-// import $ from 'jquery';
-
 import numAnimation from './modules/numAnimation';
 import menu from './modules/menu';
 import animationScroll from './modules/animationScroll';
@@ -10,9 +8,8 @@ import _formValidation from './modules/_formValidation';
 import _owl from './modules/_owl';
 
 $(window).on('load', function() {
-    $('#before-load').find('i').fadeOut().end().delay(400).fadeOut('slow');
+    $('#before-load').find('svg').fadeOut().end().delay(400).fadeOut('slow');
 });
-
 
 $(document).ready(function(){
 

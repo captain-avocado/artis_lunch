@@ -4,18 +4,18 @@
   top: 0; /*положение элемента сверху*/
   right: 0; /*положение элемента справа*/
   bottom: 0; /*положение элемента снизу*/
-  background: #fff;
+  background: $accent-color;
   // background: $accent-color; /*цвет заднего фона блока*/
   z-index: 1001; /*располагаем его над всеми элементами на странице*/
 }
-#before-load i {
-  font-size: 140px;
+#before-load img {
+  // font-size: 140px;
   position: absolute;
   left: 50%;
   top: 50%;
-  margin: -70px 0 0 -70px;
+  // margin: -70px 0 0 -70px;
   // color: #fff;
   color: $accent-color;
-  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.35); 
+  // text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.35); 
 
 }

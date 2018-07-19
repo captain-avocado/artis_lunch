@@ -89,9 +89,6 @@ const svgConfig = {
     mode: {
         symbol: {
             sprite: '../sprite.svg',
-            example: {
-                dest: '../tmp/spriteSvgDemo.html'
-            }
         }
     }
 };
