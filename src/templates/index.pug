@@ -1,6 +1,6 @@
 extends ./base
 block head
-    title Главная страница
+    title ArtisLunch
 block variables
 block content
   .wrapper
@@ -11,18 +11,18 @@ block content
             ul.contacts__info.contacts-info
               li.contacts-info__item
                 i.fas.fa-phone.contacts-info__icon
-                .contacts-info__text 8 (800) 555-35-35
+                a(href="tel:8(800)555-35-35").contacts-info__text 8 (800) 555-35-35
               li.contacts-info__item
                 .contacts-info__icon
                   i.fa.fa-envelope
-                .contacts-info__text sales@artislunch.com
+                a(href="mailto:sales@artislunch.com").contacts-info__text sales@artislunch.com
             ul.contacts__socials.socials
               li.socials__item
                 a(href="#").socials__link
                   i.fab.fa-vk
           .header__row
             a(href="#").logo.header__logo
-              img(src="images/logo.png").logo__img
+              img(src="images/logo.png" alt="").logo__img
             ul.menu.header__menu
               li.menu__item(data-scroll="1") 
                 a(href="#").menu__link Преимущества
@@ -35,7 +35,7 @@ block content
         .section__info
           .info
             .info__text
-              .info__title 
+              h1.info__title 
                 span.accent-text ОБЕДЫ 
                 span.all-text — ЭТО ВКУСНО
               .info__subtitle ДОСТАВКА ОБЕДОВ РЕСТОРАННОГО КАЧЕСТВА  ПО ДОСТУПНЫМ ЦЕНАМ
@@ -50,7 +50,7 @@ block content
     section.section.section_adv
       .container.container_adv
         .adv
-          .adv__title.title
+          h2.adv__title.title
             svg.title__icon
               use(xlink:href="images/sprite.svg#plate")
             .title__main-title
@@ -106,7 +106,7 @@ block content
         .menu-slider
           .owl-carousel.owl-theme.owl-menu
             .item
-              .title
+              h2.title
                   svg.title__icon
                     use(xlink:href="images/sprite.svg#plate")
                   .title__main-title
@@ -372,9 +372,9 @@ block content
       .container.container_form
         form.form#form
           .form__left-col
-            img(src="images/form.jpg").form__img
+            img(src="images/form.jpg" alt="").form__img
           .form__right-col
-            .form__title Форма обратной связи
+            h3.form__title Форма обратной связи
             ul.form__inputs.inputs
               li.inputs__item
                 input(placeholder="Ваше имя" name="name").input.input_name
@@ -392,7 +392,7 @@ block content
               span.btn__text Отправить
     section.section.section_history
       .container.container_history
-        .title
+        h2.title
           svg.title__icon
             use(xlink:href="images/sprite.svg#plate")
           .title__main-title
@@ -430,21 +430,21 @@ block content
                 .owl-stage-outer
                     .owl-stage
                         .owl-item
-                          img.owl-img(src="images/milk-cult.jpg")
+                          img.owl-img(src="images/milk-cult.jpg" alt="")
                         .owl-item
-                          img.owl-img(src="images/milk-cult.jpg")
+                          img.owl-img(src="images/milk-cult.jpg" alt="")
                         .owl-item
-                          img.owl-img(src="images/milk-cult.jpg")
+                          img.owl-img(src="images/milk-cult.jpg" alt="")
                 .owl-nav-history#owl-nav-history
                     .owl-prev
                       i.fas.fa-angle-left
                     .owl-next
                       i.fas.fa-angle-right
-              img(src="images/artis-logo.png").history__artis-logo
+              img(src="images/artis-logo.png" alt="").history__artis-logo
     section.section.section_reviews.fit-content
       .container.container_reviews
         .reviews
-          .reviews__title
+          h2.reviews__title
             span.accent-text Отзывы 
             span.all-text о нашей работе
           .reviews__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud veniam, quis nostrud aboris nisi ut aliquip ex ea
@@ -454,7 +454,7 @@ block content
     section.section.section_clients.fit-content
       .container.container_clients
         .clients
-          .clients__title.title
+          h2.clients__title.title
             svg.title__icon
               use(xlink:href="images/sprite.svg#plate")
             .title__main-title
@@ -465,32 +465,34 @@ block content
             .owl-wrapper
               .owl-carousel.owl-theme.owl-loaded.owl-clients
                         .item.owl-clients-item
-                          img.owl-clients-img(src="images/arla.png")
+                          img.owl-clients-img(src="images/arla.png" alt="")
                         .item.owl-clients-item
-                          img.owl-clients-img(src="images/lsr.png")
+                          img.owl-clients-img(src="images/lsr.png" alt="")
                         .item.owl-clients-item
-                          img.owl-clients-img(src="images/kanat.png")
+                          img.owl-clients-img(src="images/derevoteka.jpg" alt="")
+                        .item.owl-clients-item
+                          img.owl-clients-img(src="images/kanat.png" alt="")
     section.section.section_footer
       .container.container_footer
         footer.footer
           .footer__about
             a(href="#").footer__logo.logo
-              img(src="images/logo.png").logo__img
+              img(src="images/logo.png" alt="").logo__img
             .footer__descr Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
           .footer__lists
             .footer__right-col.footer__map
-              .footer__title Карта
+              h3.footer__title Карта
               .map__display#map.map
             .footer__left-col
               .footer__working-time
-                .footer__title Часы работы
+                h3.footer__title Часы работы
                 ul.footer__text-list.text-list
                   li.text-list__item Понедельник - Пятница
                   li.text-list__item.accent-text С 10:00 до 19:00
                   li.text-list__item Суббота - Воскресенье
                   li.text-list__item.accent-text Выходные
               .footer__contacts
-                .footer__title Контакты
+                h3.footer__title Контакты
                 ul.footer__text-list.text-list
                   li.text-list__item Петровский проспект, 20, СПб, 197110
                   li.text-list__item +7 (800) 555-35-35
