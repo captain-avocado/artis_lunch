@@ -1,21 +1,15 @@
 #before-load {
-  position: fixed; /*фиксированное положение блока*/
-  left: 0; /*положение элемента слева*/
-  top: 0; /*положение элемента сверху*/
-  right: 0; /*положение элемента справа*/
-  bottom: 0; /*положение элемента снизу*/
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
   background: $accent-color;
-  // background: $accent-color; /*цвет заднего фона блока*/
-  z-index: 1001; /*располагаем его над всеми элементами на странице*/
+  z-index: 1001; 
 }
 #before-load img {
-  // font-size: 140px;
   position: absolute;
   left: 50%;
   top: 50%;
-  // margin: -70px 0 0 -70px;
-  // color: #fff;
   color: $accent-color;
-  // text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.35); 
-
 }

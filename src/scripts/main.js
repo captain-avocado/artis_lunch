@@ -8,6 +8,7 @@ import _formValidation from './modules/_formValidation';
 import _owl from './modules/_owl';
 
 $(window).on('load', function() {
+    $('.wrapper').show();
     $('#before-load').find('svg').fadeOut().end().delay(400).fadeOut('slow');
 });
 
