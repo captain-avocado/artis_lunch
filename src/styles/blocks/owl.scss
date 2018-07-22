@@ -17,6 +17,13 @@
     }
   }
 
+  &-history {
+    @include tablets {
+      height: 350px;
+
+    }
+  }
+
   //fixme
   &-carousel, &-stage-outer {
     height: 100%;

@@ -12,6 +12,11 @@ export default function _owl() {
         loop: true,
         slideSpeed: 300,
         paginationSpeed: 400,
+        responsive: {
+            768: {
+                items: 2,
+            },
+        },
     });
 
     //

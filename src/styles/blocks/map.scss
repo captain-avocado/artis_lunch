@@ -2,4 +2,7 @@
   max-width: 70%;
   flex: 1;
   color: #000;
+  @include tablets {
+    min-height: 250px;
+  }
 }

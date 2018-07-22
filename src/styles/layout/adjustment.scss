@@ -21,7 +21,9 @@ body {
         padding: $section-padding 0;
     }
 
-    
+    @include tablets {
+        height: fit-content;
+    }
 
     &_main {
         position: relative;

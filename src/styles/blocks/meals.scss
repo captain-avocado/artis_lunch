@@ -15,6 +15,9 @@
 
   &__name {
     color: $text-black;
+    @include tablets {
+      width: 70%;
+    }
   }
 
   &__weight {
