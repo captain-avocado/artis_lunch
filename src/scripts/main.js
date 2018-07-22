@@ -41,5 +41,13 @@ $(document).ready(function(){
 
     googleMaps.KEY = 'AIzaSyDb-hSAeXf2JnxUCPnrIL8W54NMBW8rCRs';
     googleMaps.load(initMap);
+
+    $('.hamburger').on('click', function(e) {
+        e.preventDefault();
+        $('.hamburger').toggleClass('is-active');
+        const menu = $('.menu');
+        menu.toggleClass('active');
+        
+    });
     
 });

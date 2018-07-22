@@ -4,5 +4,24 @@
     justify-content: space-between;
     align-items: center;
     padding: 15px 0;
+
+    position: relative;
+  }
+
+  &__menu {
+    @include tablets {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+    }
+  }
+
+  &__burger {
+    display: none;
+
+    @include tablets {
+      display: block;
+    }
   }
 }

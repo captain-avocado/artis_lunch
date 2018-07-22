@@ -13,6 +13,9 @@ export default function _owl() {
         slideSpeed: 300,
         paginationSpeed: 400,
         responsive: {
+            1000: {
+                items: 3,
+            },
             768: {
                 items: 2,
             },
