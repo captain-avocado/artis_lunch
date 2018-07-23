@@ -32,5 +32,8 @@
   &__text {
     width: 70%;
     margin-bottom: 30px;
+    @include tablets {
+      width: 100%;
+    }
   }
 }

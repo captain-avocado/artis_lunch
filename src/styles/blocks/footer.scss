@@ -11,6 +11,9 @@
   
   &__about {
     max-width: 70%;
+    @include phones {
+      max-width: 100%;
+    }
 
     display: flex;
     flex-direction: column;
@@ -42,6 +45,10 @@
 
   &__left-col {
     display: flex;
+
+    @include phones {
+      flex-direction: column;
+    }
   }
 
   &__left-col, &__right-col {
@@ -53,6 +60,11 @@
 
   &__contacts, &__working-time {
     flex: 1;
+  }
+  &__working-time {
+    @include phones {
+      margin-bottom: 30px;
+    }
   }
 
   &__title {

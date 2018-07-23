@@ -19,6 +19,9 @@ export default function _owl() {
             768: {
                 items: 2,
             },
+            375: {
+                items: 1,
+            },
         },
     });
 
@@ -50,6 +53,12 @@ export default function _owl() {
         slideSpeed: 300,
         paginationSpeed: 400,
         singleItem: true,
+
+        responsive: {
+            375: {
+                margin: 30,
+            },
+        },
     });
     $('.owl-dot').click(function (e) {
         e.preventDefault();

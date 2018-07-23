@@ -5,4 +5,7 @@
   @include tablets {
     min-height: 250px;
   }
+  @include phones {
+    max-width: 100%;
+  }
 }

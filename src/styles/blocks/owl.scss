@@ -20,7 +20,9 @@
   &-history {
     @include tablets {
       height: 350px;
-
+    }
+    @include phones {
+      height: 250px;
     }
   }
 

@@ -1,12 +1,20 @@
 .nums {
   display: flex;
+  @include phones {
+    flex-direction: column;
+  }
   width: 100%;
   z-index: 100;
   &__item {
     flex: 1;
-
+    @include phones {
+      width: 100%;
+    }
     &:not(:last-of-type) {
-      margin-right: 30px;
+      @include phones {
+        margin-right: 0;
+        margin-bottom: 40px;
+      }
     }
   }
 }

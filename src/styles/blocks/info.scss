@@ -1,6 +1,9 @@
 .info {
   width: 600px;
   text-align: center;
+  @include phones {
+    width: 100%;
+  }
   &__title {
     font-size: 50px;
     font-weight: 700;
@@ -8,6 +11,9 @@
 
     @include phones {
       font-size: 30px;
+      @include phones {
+        font-size: 28px;
+      }
     }
 
   }

@@ -1,5 +1,6 @@
 import numAnimation from './modules/numAnimation';
 import menu from './modules/menu';
+import burgerMenu from './modules/burgerMenu';
 import animationScroll from './modules/animationScroll';
 
 import googleMaps from 'google-maps';
@@ -19,6 +20,7 @@ $(document).ready(function(){
     numAnimation(0, 65, '#workers', 3000);
 
     menu('.menu__item');
+    burgerMenu('.menu');
 
     $('#more').click(function(e) {
         e.preventDefault(); 
@@ -42,12 +44,6 @@ $(document).ready(function(){
     googleMaps.KEY = 'AIzaSyDb-hSAeXf2JnxUCPnrIL8W54NMBW8rCRs';
     googleMaps.load(initMap);
 
-    $('.hamburger').on('click', function(e) {
-        e.preventDefault();
-        $('.hamburger').toggleClass('is-active');
-        const menu = $('.menu');
-        menu.toggleClass('active');
-        
-    });
+    
     
 });

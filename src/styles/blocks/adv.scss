@@ -10,6 +10,9 @@
 
   &__list {
     display: flex;
+    @include phones {
+      flex-direction: column;
+    }
   }
 
   &__descr {
@@ -24,8 +27,14 @@
 
   &__item {
     flex: 1;
+    @include phones {
+      width: 100%;
+    }
     &:not(:last-of-type) {
-      margin-right: 30px;
+      @include phones {
+        margin-right: 0;
+        margin-bottom: 40px;
+      }
     }
   }
 }

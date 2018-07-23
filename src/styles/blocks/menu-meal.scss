@@ -22,10 +22,18 @@
       width: 30.5%;
     }
 
+    @include phones {
+      width: 100%;
+    }
+
     &:not(:nth-of-type(3n)) {
       margin-right: 2.66%;
       @include tablets {
         margin-right: 4.25%;
+      }
+      @include phones {
+        margin-right: 0;
+        // margin-bottom: 40px;
       }
     }
 

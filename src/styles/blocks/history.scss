@@ -22,6 +22,10 @@
     @include tablets {
       width: 75%;
     }
+
+    @include phones {
+      width: 100%;
+    }
   }
   &__text {
     margin-bottom: 30px;

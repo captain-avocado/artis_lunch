@@ -15,6 +15,10 @@ body {
 
     &:not(.fit-content) {
         min-height: 720px;
+        @include phones {
+            min-height: 450px;
+            padding-bottom: 80px;
+        }
     }
     
     &:not(.section_main) {
@@ -126,6 +130,10 @@ body {
 
     &_footer {
         background-image: url('../images/bg-footer.jpg');
+
+        @include phones {
+            background-size: cover;
+        }
         padding-bottom: 20px !important;
         position: relative;
         &:before {
