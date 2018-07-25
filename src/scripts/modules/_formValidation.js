@@ -30,11 +30,6 @@ export default function _formValidation() {
         },
         submitHandler: function(form) {
 
-            //delete 
-            swal('Спасибо', 'Мы скоро с вами свяжемся', 'success');
-            $('#form').trigger('reset');
-            //enddelete
-
             $(form).submit(function() {
                 const data = {};
                 data['name'] = $('.input_name').val();
