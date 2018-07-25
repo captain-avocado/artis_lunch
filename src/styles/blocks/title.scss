@@ -21,6 +21,14 @@
 
     margin-bottom: 12px;
 
+    @include phones {
+      font-size: 38px;
+    }
+
+    @include phones-small {
+      font-size: 32px;
+    }
+
     &:after {
       position: absolute;
       content: '';

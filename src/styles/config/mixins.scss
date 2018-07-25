@@ -21,3 +21,9 @@
       @content;
   }
 }
+
+@mixin phones-small {
+  @media (max-width: 320px) {
+    @content;
+  }
+}

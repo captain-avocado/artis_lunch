@@ -11,6 +11,7 @@
   font-size: 14px;
   @include phones {
     font-size: 10px;
+    padding: 10px 20px;
   }
   &__text {
     position: relative;

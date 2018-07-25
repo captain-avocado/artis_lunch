@@ -47,6 +47,10 @@
     font-family: 'AmaticSC';
     font-weight: 700;
     color: $text-black;
+
+    @include phones {
+      font-size: 26px;
+    }
   }
 
   &__gr {
