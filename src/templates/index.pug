@@ -5,7 +5,7 @@ block variables
 block content
   .before-load#before-load(style="position: fixed; left: 0;top: 0;right: 0;bottom: 0;background: #f15a24;z-index: 1001; ")
     img(src="images/preload.svg" width="40" alt="" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); color: #f15a24;")
-  .wrapper
+  .wrapper#wrapper
     section.section.section_main
       .container.container_main
         header.header
@@ -504,6 +504,26 @@ block content
             .footer__copyright 
               span.all-text © 
               span.accent-text ArtisLunch 
-              span.all-text 2018 Все права сохранены         
-    link(rel="stylesheet", href="styles/main.min.css")
+              span.all-text 2018 Все права сохранены  
+    link(rel="stylesheet", href="styles/main.min.css")       
+    script.
+      const preloaderLayer = document.getElementById("before-load");
+      const wrapper = document.getElementById('wrapper');
+
+      function fadeOutnojquery(el){
+        el.style.opacity = 1;
+        var interpreloader = setInterval(function(){
+          el.style.opacity = el.style.opacity - 0.05;
+          if (el.style.opacity <=0.05){ 
+            clearInterval(interpreloader);
+            preloaderLayer.style.display = "none";
+          }
+        },16);
+      }
+
+      window.onload = function(){
+        setTimeout(function(){
+          fadeOutnojquery(preloaderLayer);
+        }, 10);
+      };
     script(src="scripts/main.bundle.js")

@@ -8,10 +8,18 @@ import {initMap} from './modules/_initMap';
 import _formValidation from './modules/_formValidation';
 import _owl from './modules/_owl';
 
-$(window).on('load', function() {
-    $('.wrapper').show();
-    $('#before-load').find('svg').fadeOut().end().delay(400).fadeOut('slow');
-});
+
+// $('.section')
+//     .waitForImages(function() {
+//         $('.wrapper').show();
+//         $('#before-load').find('svg').fadeOut().end().delay(400).fadeOut('slow');
+            
+//     }, $.noop, true);
+
+// window.onload = function() {
+//     $('.wrapper').show();
+//     $('#before-load').find('svg').fadeOut().end().delay(400).fadeOut('slow');
+// };
 
 $(document).ready(function(){
 
