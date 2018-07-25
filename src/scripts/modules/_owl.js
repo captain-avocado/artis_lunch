@@ -8,19 +8,20 @@ export default function _owl() {
         autoplay: true,
         dots: false,
         margin: 30,
-        items: 3,
+        items: 1,
         loop: true,
         slideSpeed: 300,
         paginationSpeed: 400,
+        responsiveClass: true,
         responsive: {
-            1000: {
-                items: 3,
+            420: {
+                items: 1,
             },
             768: {
                 items: 2,
             },
-            420: {
-                items: 1,
+            992: {
+                items: 3,
             },
         },
     });

@@ -15,10 +15,6 @@
     font-weight: 700;
     margin-bottom: 35px;
     @include phones {
-      font-size: 38px;
-    }
-
-    @include phones-small {
       font-size: 32px;
     }
     
