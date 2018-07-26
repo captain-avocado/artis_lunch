@@ -18,6 +18,8 @@
   }
 
   &-history {
+    max-height: 350px;
+    margin-top: 15px;
     @include tablets {
       height: 350px;
     }
