@@ -130,10 +130,9 @@ body {
 
     &_footer {
         background-image: url('../images/bg-footer.jpg');
+        background-size: cover;
+        background-position: center center;
 
-        @include phones {
-            background-size: cover;
-        }
         padding-bottom: 20px !important;
         position: relative;
         &:before {
