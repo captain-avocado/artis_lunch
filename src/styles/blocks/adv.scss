@@ -15,8 +15,10 @@
 
   &__descr {
     width: 750px;
+    line-height: 26px;
     @include tablets {
       width: 100%;
+      line-height: 23px;
     }
 
     text-align: center;

@@ -22,5 +22,9 @@
 
   &__descr {
     width: 100%;
+    line-height: 26px;
+    @include tablets {
+      line-height: 23px;
+    }
   }
 }

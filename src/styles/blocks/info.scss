@@ -29,9 +29,6 @@
 
   &__descr {
     margin-bottom: 25px;
-    @include phones {
-      font-size: 11px;
-    }
   }
 
   &__btns {
