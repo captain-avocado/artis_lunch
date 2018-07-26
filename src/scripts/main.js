@@ -10,7 +10,7 @@ import _owl from './modules/_owl';
 
 import svgUseIt from 'svg-use-it';
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', function() {
     svgUseIt();
 });
 
