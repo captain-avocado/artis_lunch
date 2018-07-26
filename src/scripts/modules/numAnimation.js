@@ -1,13 +1,14 @@
-export default function numAnimation(startValue, endValue, blockName, animationDuration) {
+export default function numAnimation(startValue, endValue, blockName,animationDuration) {
     if (endValue >= startValue) {
 
-        const targetBlock = $(blockName);
+        const section = $(blockName).closest('.section');
         let blockStatus = true;
 
         $(window).scroll(function() {
-            let scrollEvent = ($(window).scrollTop() + $(window).height()) > targetBlock.offset().top;
+            let scrollEvent = ($(window).scrollTop() + $(window).height()) > section.offset().top;
 
             if (scrollEvent && blockStatus) {
+                console.log('ef');
                 blockStatus = false;
                 setTimeout(function() {
                     $({numberValue: startValue}).animate({numberValue: endValue}, {
