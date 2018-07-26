@@ -9,18 +9,6 @@ import _formValidation from './modules/_formValidation';
 import _owl from './modules/_owl';
 
 
-// $('.section')
-//     .waitForImages(function() {
-//         $('.wrapper').show();
-//         $('#before-load').find('svg').fadeOut().end().delay(400).fadeOut('slow');
-            
-//     }, $.noop, true);
-
-// window.onload = function() {
-//     $('.wrapper').show();
-//     $('#before-load').find('svg').fadeOut().end().delay(400).fadeOut('slow');
-// };
-
 $(document).ready(function(){
 
     numAnimation(0, 220, '#clients', 3000);
@@ -52,6 +40,4 @@ $(document).ready(function(){
     googleMaps.KEY = 'AIzaSyDb-hSAeXf2JnxUCPnrIL8W54NMBW8rCRs';
     googleMaps.load(initMap);
 
-    
-    
 });

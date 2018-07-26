@@ -30,7 +30,9 @@ export default function _formValidation() {
         },
         submitHandler: function(form) {
 
-            $(form).submit(function() {
+            $(form).get(0).on('submit', function(e) {
+                e.preventDefault();                
+
                 const data = {};
                 data['name'] = $('.input_name').val();
                 data['phone'] = $('.input_phone').val();
@@ -47,6 +49,7 @@ export default function _formValidation() {
                     swal('Спасибо', 'Мы скоро с вами свяжемся', 'success');
                     $('#form').trigger('reset');
                 });
+
                 return false;
             });         
         },
