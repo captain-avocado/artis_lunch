@@ -10,19 +10,48 @@ if (!((oldIE > -1) || (newIE > -1))) {
     preloaderIcon.style.display = 'block';
 }
 
-function fadeOutnojquery(el){
-  el.style.opacity = 1;
-  var interpreloader = setInterval(function(){
-    el.style.opacity = el.style.opacity - 0.05;
-    if (el.style.opacity <=0.05){ 
-      clearInterval(interpreloader);
-      preloaderLayer.style.display = "none";
-    }
-  },16);
+//- function fadeOutnojquery(el){
+//-   el.style.opacity = 1;
+//-   var interpreloader = setInterval(function(){
+//-     el.style.opacity = el.style.opacity - 0.05;
+//-     if (el.style.opacity <=0.05){ 
+//-       clearInterval(interpreloader);
+//-       preloaderLayer.style.display = "none";
+//-     }
+//-   },16);
+//- }
+function fadeOut( elem, ms )
+{
+  if( ! elem )
+    return;
+
+  if( ms )
+  {
+    var opacity = 1;
+    var timer = setInterval( function() {
+      opacity -= 50 / ms;
+      if( opacity <= 0 )
+      {
+        clearInterval(timer);
+        opacity = 0;
+        elem.style.display = "none";
+        elem.style.visibility = "hidden";
+      }
+      elem.style.opacity = opacity;
+      elem.style.filter = "alpha(opacity=" + opacity * 100 + ")";
+    }, 50 );
+  }
+  else
+  {
+    elem.style.opacity = 0;
+    elem.style.filter = "alpha(opacity=0)";
+    elem.style.display = "none";
+    elem.style.visibility = "hidden";
+  }
 }
 
 window.onload = function(){
   setTimeout(function(){
-    fadeOutnojquery(preloaderLayer);
-  }, 10);
+    fadeOut(preloaderLayer, 500);
+  }, 500);
 };</script><script src="scripts/main.bundle.js"></script></div></body></html>
