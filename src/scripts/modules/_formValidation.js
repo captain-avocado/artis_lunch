@@ -1,6 +1,4 @@
-import 'jquery-validation';
 import swal from 'sweetalert';
-
 
 export default function _formValidation() {
 

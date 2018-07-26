@@ -45,8 +45,6 @@
     "google-maps": "^3.3.0",
     "hamburgers": "^0.9.3",
     "jquery": "^3.3.1",
-    "jquery-validation": "^1.17.0",
-    "jquery.waitforimages": "^2.4.0",
     "owl.carousel": "^2.3.4",
     "svg-use-it": "^1.1.6",
     "sweetalert": "^2.1.0"

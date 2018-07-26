@@ -5,16 +5,13 @@ import animationScroll from './modules/animationScroll';
 
 import googleMaps from 'google-maps';
 import {initMap} from './modules/_initMap';
+import svgUseIt from 'svg-use-it';
 import _formValidation from './modules/_formValidation';
 import _owl from './modules/_owl';
 
-import svgUseIt from 'svg-use-it';
-
-document.addEventListener('DOMContentLoaded', function() {
-    svgUseIt();
-});
-
 $(document).ready(function(){
+
+    svgUseIt();
 
     numAnimation(0, 220, '#clients', 3000);
     numAnimation(0, 1300, '#dinners', 3000);
