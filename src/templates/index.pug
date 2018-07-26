@@ -13,11 +13,11 @@ block content
             ul.contacts__info.contacts-info
               li.contacts-info__item
                 i.fas.fa-phone.contacts-info__icon
-                a(href="tel:8(800)555-35-35").contacts-info__text 8 (800) 555-35-35
+                a(href="tel:+79697021622").contacts-info__text +7 (969) 702-16-22
               li.contacts-info__item
                 .contacts-info__icon
                   i.fa.fa-envelope
-                a(href="mailto:sales@artislunch.com").contacts-info__text sales@artislunch.com
+                a(href="mailto:obed@artiskids.ru").contacts-info__text obed@artiskids.ru
             ul.contacts__socials.socials
               li.socials__item
                 a(href="https://vk.com/artislunch").socials__link
@@ -45,7 +45,7 @@ block content
                 strong.accent-text ОБЕДЫ 
                 strong.all-text — ЭТО ВКУСНО
               .info__subtitle ДОСТАВКА ОБЕДОВ РЕСТОРАННОГО КАЧЕСТВА  ПО ДОСТУПНЫМ ЦЕНАМ
-              .info__descr Lorem ipsum dolor sit amet,  sit ametelit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,t enim ad minim veniam quis nostrud exercitation nisi ut aliquip ex ea commodo consequat.
+              .info__descr Мы с удовольствием готовим вкусные и горячие обеды и доставляем их в назначенное время и в абсолютно любое место в пределах КАД. Не откладывайте на завтра - закажите еду к себе в офис, на съемочную площадку, на производство, склад, на тренинг или мероприятие прямо сейчас бесплатно!
             ul.info__btns
               li.info__btn
                 a(href="#").btn.btn_more#more
@@ -62,41 +62,40 @@ block content
             h2.title__main-title
               strong.accent-text Артис 
               strong.all-text Обеды
-            .title__subtitle Lorem ipsum dolor sit amet, consectetur adipiscin
+            .title__subtitle Искусство  готовить вкусно!
           .adv__descr 
-            span.all-text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud veniam, quis nostrud aboris nisi ut aliquip ex ea  
-            span.accent-text доставка от 10 порций. 
-            span.all-text Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            p В наше время нескончаемой суматохи и увеличивающегося темпа работы, проблема питания на рабочем месте встает особенно остро. Часто на полноценные перерывы для похода в кафе – элементарно не хватает времени. А бывает, что такого заведения рядом и нет. В таких случаях на помощь приходит Артис–Обеды! 
+            p Мы бесплатно доставим вкусные обеды на Ваш адрес #[span.accent-text при заказе от 10 порций. ]
           ul.adv__list
             li.adv__item.advantage
               svg.advantage__icon
                 use(xlink:href="images/sprite.svg#clock")
               .advantage__name Быстрая доставка
-              .advantage__descr Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              .advantage__descr Благодаря наличию собственной логистики – Ваши обеды будут доставлены горячими и в срок!
             li.adv__item.advantage
               svg.advantage__icon
                 use(xlink:href="images/sprite.svg#fork-knife")
               .advantage__name Разнообразное меню
-              .advantage__descr Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              .advantage__descr Заказывая наши обеды с доставкой – Вы получаете каждый день новый и вкусный обед! Мы также можем составить индивидуальное меню под Вашу организацию от 20 человек
             li.adv__item.advantage
               svg.advantage__icon
                 use(xlink:href="images/sprite.svg#medal")
               .advantage__name Гарантия качества
-              .advantage__descr Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              .advantage__descr Наше производство построено в соответствии с нормами СанПин и оборудовано новой современной техникой, а наши обеды готовятся исключительно в день поставки из свежих продуктов, прошедших строжайший контроль качества
     section.section.section_nums.fit-content
       .container.container_nums
         ul.nums
           li.nums__item.num
             svg.num__icon
                 use(xlink:href="images/sprite.svg#lemonade")
-            .num__number#clients 0
+            .num__number >#[span#clients 0]
             .num__descr
               span.accent-text Ежедневных 
               span.all-text клиентов
           li.nums__item.num
             svg.num__icon
                 use(xlink:href="images/sprite.svg#couple")
-            .num__number#dinners 0
+            .num__number >#[span#dinners 0]
             .num__descr
               span.accent-text Вкусных 
               span.all-text обедов
@@ -403,11 +402,9 @@ block content
         .history
           .history__left-col
             .history__text 
-              span.all-text Lorem ipsum dolor sit amet, consectetur adipiscing
-              span.accent-text  elit, sed do eiusmod 
-              span.all-text tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-              span.accent-text ullamco laboris 
-              span.all-text nisi ut aliquip ex ea commodo consequat.
+              p Артис – обеды входит в подразделение компании #[span.accent-text «Артис – Детское питание»], которая является крупнейшим  поставщиком продуктов питания в социальную сферу в Северо-Западном регионе.
+              p В настоящее время, ежедневно обслуживается свыше #[span.accent-text 400] учреждений социальной сферы. Начиная с 2012 года,  компания является крупнейшим поставщиком социальной сферы Санкт-Петербурга по объемам выполненных работ
+              p Кроме того, Артис Детское питание входит в Группу компаний «Артис»:
             ul.history__companies.companies
               li.companies__item.company
                 i.fa.fa-hand-point-right.company__pointer
@@ -445,7 +442,9 @@ block content
           h2.reviews__title
             strong.accent-text Отзывы 
             strong.all-text о нашей работе
-          .reviews__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud veniam, quis nostrud aboris nisi ut aliquip ex ea
+          .reviews__text 
+            p Для нас очень важно мнение наших клиентов и мы тщательно следим за обратной связью. За наш многолетний опыт работы мы сформировали идеальную технологию приготовления и доставки питания.
+            p Чтобы почитать или оставить отзыв о нашей работе – пройдите по ссылке ниже
           a(href="#").reviews__btn.btn.btn_order
             span.btn__text Читать
     section.section.section_clients.fit-content
@@ -457,7 +456,7 @@ block content
             h2.title__main-title
               strong.accent-text Наши 
               strong.all-text Клиенты
-            .title__subtitle Lorem ipsum dolor sit amet, consectetur adipiscin
+            .title__subtitle Самый важный клиент – это наш клиент!
           .clients__slider
             .owl-wrapper
               .owl-carousel.owl-theme.owl-loaded.owl-clients
@@ -518,17 +517,6 @@ block content
       if (!((oldIE > -1) || (newIE > -1))) {
           preloaderIcon.style.display = 'block';
       }
-
-      //- function fadeOutnojquery(el){
-      //-   el.style.opacity = 1;
-      //-   var interpreloader = setInterval(function(){
-      //-     el.style.opacity = el.style.opacity - 0.05;
-      //-     if (el.style.opacity <=0.05){ 
-      //-       clearInterval(interpreloader);
-      //-       preloaderLayer.style.display = "none";
-      //-     }
-      //-   },16);
-      //- }
       function fadeOut( elem, ms )
       {
         if( ! elem )

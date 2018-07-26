@@ -16,9 +16,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 $(document).ready(function(){
 
-    numAnimation(0, 220, '#clients', 3000);
-    numAnimation(0, 1300, '#dinners', 3000);
-    numAnimation(0, 65, '#workers', 3000);
+    numAnimation(0, 100, '#clients', 1000);
+    numAnimation(0, 1000, '#dinners', 1000);
+    numAnimation(0, 40, '#workers', 1000);
 
     menu('.menu__item');
     burgerMenu('.menu');
