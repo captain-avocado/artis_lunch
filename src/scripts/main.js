@@ -8,6 +8,11 @@ import {initMap} from './modules/_initMap';
 import _formValidation from './modules/_formValidation';
 import _owl from './modules/_owl';
 
+import svgUseIt from 'svg-use-it';
+
+document.addEventListener('DOMContentLoaded', () => {
+    svgUseIt();
+});
 
 $(document).ready(function(){
 
