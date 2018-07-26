@@ -147,14 +147,14 @@ body {
             opacity: .1;
         }
     }
-
-}
-
-.ie {
     &_reviews, &_form, &_nums {
-        background-attachment: scroll;
+        @include ie {
+            background-attachment: scroll;
+        }
     }
 }
+
+
 
 .container {
     width: 90%;
