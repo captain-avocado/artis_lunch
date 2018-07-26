@@ -2,6 +2,7 @@
   width: 65%;
   display: flex;
   z-index: 100;
+  min-height: 75%;
 
   // height: 470px;
   @include tablets {

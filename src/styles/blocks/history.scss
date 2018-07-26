@@ -1,6 +1,7 @@
 .history {
   display: flex;
   width: 100%;
+  min-height: 60%;
 
   @include tablets {
     flex-direction: column;
