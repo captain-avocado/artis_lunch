@@ -372,7 +372,7 @@ block content
       .container.container_form
         form.form#form
           .form__left-col
-            //- img(src="images/form.jpg" alt="").form__img
+            img(src="images/form.jpg" alt="").form__img
           .form__right-col
             h3.form__title Форма обратной связи
             ul.form__inputs.inputs
@@ -386,8 +386,8 @@ block content
                 input(placeholder="Ваша почта" name="mail").input.input_mail
                 i.fa.fa-envelope.inputs__icon
               li.inputs__item.inputs__item_comment
-                textarea(name="comment", cols="30", rows="10" placeholder="Заказать бесплатную дегустацию*").input.input_comment
-                i.fa.fa-comment.inputs__icon
+                textarea(name="comment", cols="30", rows="4" placeholder="Заказать бесплатную дегустацию*").input.input_comment
+                i.fa.fa-comment.inputs__icon.inputs__icon_comment
             button(type="submit").form__btn.btn.btn_submit 
               span.btn__text Отправить
     section.section.section_history

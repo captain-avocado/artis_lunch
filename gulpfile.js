@@ -65,7 +65,9 @@ function templates() {
     .pipe($gp.plumber({
         errorHandler: reportError
     }))
-    .pipe($gp.pug())
+    .pipe($gp.pug({
+        pretty: true
+    }))
     .pipe(gulp.dest(paths.dest));
 }
 

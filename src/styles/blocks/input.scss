@@ -6,7 +6,11 @@
   border: 1px solid #d4d4d4;
   outline: none;
   font-family: 'OpenSans';
-  font-size: 12px;
+  font-size: 16px;
+
+  @include desktop {
+    font-size: 12px;
+  }
 
   transition: border .5s ease-out 0s;
 

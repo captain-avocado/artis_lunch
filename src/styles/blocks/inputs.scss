@@ -13,8 +13,14 @@
   }
   &__icon {
     position: absolute;
-    top: 10px;
+    // top: 10px;
+    top: 50%;
+    transform: translateY(-50%);
     left: 15px;
     color: $accent-color;
+    &_comment {
+      top: 15px;
+      transform: translateY(0);
+    }
   }
 }
