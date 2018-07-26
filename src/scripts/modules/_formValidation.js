@@ -2,12 +2,6 @@ import swal from 'sweetalert';
 
 export default function _formValidation() {
 
-    $.validator.addMethod('customphone', function (phone_number, element) {
-        phone_number = phone_number.replace(/\s+/g, ''); 
-        return this.optional(element) || (phone_number.length !== 0 &&
-		phone_number.match(/^\+?[78][-(]?\d{3}\)?-?\d{3}-?\d{2}-?\d{2}$/));
-    });
-
     $('#form').submit(function () {
 
         if (validate()){
