@@ -4,7 +4,7 @@ block head
 block variables
 block content
   .before-load#before-load(style="position: fixed; left: 0;top: 0;right: 0;bottom: 0;background: #f15a24;z-index: 1001; ")
-    img#before-load-img(src="images/preload.svg" width="40" alt="" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); color: #f15a24;")
+    img#before-load-img(src="images/preload.svg" width="40" alt="" style="display:none; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); color: #f15a24;")
   .wrapper#wrapper
     section.section.section_main
       .container.container_main
@@ -515,8 +515,8 @@ block content
       var oldIE = ua.indexOf('MSIE ');
       var newIE = ua.indexOf('Trident/');
 
-      if ((oldIE > -1) || (newIE > -1)) {
-          preloaderIcon.style.display = 'none';
+      if (!((oldIE > -1) || (newIE > -1))) {
+          preloaderIcon.style.display = 'block';
       }
 
       function fadeOutnojquery(el){
