@@ -33,9 +33,11 @@
   }
 
   &:hover {
-    // border-radius: 4px;
     &:after {
       height: 100%;
+      @include tablets {
+        height: 0;
+      }
     }
   }
 

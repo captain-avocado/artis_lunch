@@ -1,4 +1,8 @@
 export default function numAnimation(startValue, endValue, blockName,animationDuration) {
+    if ($(window).width() <= 768) {
+        $(blockName).html(endValue);
+        return;
+    } 
     if (endValue >= startValue) {
 
         const section = $(blockName).closest('.section');
